@@ -22,8 +22,12 @@ output = -1
 """
 Pseudocode:
 
-1: while low index and high index is not same
-2:
+1: Set high and low to len(array), 0
+2: Check if mid (low+high // 2) is targer0
+3: If targer is greater than mid then set low = next index number (mid + 1) of mid as mid was checked
+4: If target is less than mid then set high = preivous index number of mid(mid - 1) as high as mid was chacked
+5: Keep repeating steps until low <= high
+6: Cant find target in array return -1
 """
 
 def binarySearch(array, target):
@@ -44,3 +48,6 @@ target = 9
 length = len(nums)
 
 binarySearch(array= nums,target=target)
+
+
+# Passed all test case in LeetCode

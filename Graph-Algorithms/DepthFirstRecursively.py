@@ -6,7 +6,7 @@ def depthFirstPrint(graph, source):
         depthFirstPrint(graph, neighbor)
 
 graph = {
-    'a':['b', 'c'],
+    'a':['b', 'b'],
     'b':['d'],
     'c':['e'],
     'd':['f'],

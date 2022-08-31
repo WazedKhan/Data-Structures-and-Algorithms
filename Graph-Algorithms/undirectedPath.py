@@ -23,7 +23,7 @@ def undirectedPath(edges, source, destination):
 
 
 
-def build_graph(edges):
+def build_graph():
     graph = {}
     for edge in edges:
         a, b = edge

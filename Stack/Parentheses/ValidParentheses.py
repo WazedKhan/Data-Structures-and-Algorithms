@@ -14,5 +14,5 @@ def isValid(s: str):
             return False
     return len(stack) < 1
 
-
+s = ']'
 print(isValid(s))
